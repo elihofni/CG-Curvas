@@ -4,7 +4,7 @@
   "description": "Trabalho de Computação Gráfica",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elihofni/Quiz/tree/trabalho-2"
+    "url": "https://github.com/elihofni/CG-Curvas"
   },
   "scripts": {
     "start": "npm run webpack:dev",
