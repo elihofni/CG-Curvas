@@ -1,0 +1,73 @@
+doctype html
+html(lang='pt-br')
+  head
+    title Trabalho Computação Gráfica 2019.1
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+
+  body(class="body", style="min-width: 0;")
+    canvas(class="canvas", id="canvas")
+    div(class="inputs")
+      h3(class="title") Selecione a figura
+      div(class="figure-type")
+        select(class="select", id="figuras")
+          option(class="option", value="batman", selected="selected") Batman
+          option(class="option", value="mickey") Mickey
+          option(class="option", value="heart") Coração
+          option(class="option", value="sword") Espada
+          option(class="option", value="flash") Flash
+          option(class="option", value="boat") Barco
+          option(class="option", value="cross") Cruz
+
+        div(class="option")
+          input(type="radio", id="2d", value="2d", name="figure-type")
+          label(for="2d") 2D
+
+        div(class="option")
+          input(type="radio", id="3d", value="3d", name="figure-type", checked="checked")
+          label(for="3d") 3D
+
+      select(class="select", id="cores")
+        option(class="option", value="black", selected="selected") Preto
+        option(class="option", value="purple") Roxo
+        option(class="option", value="cyan") Ciano
+        option(class="option", value="blue") Azul
+        option(class="option", value="red") Vermelho
+        option(class="option", value="green") Verde
+        option(class="option", value="orange") Laranja
+        option(class="option", value="pink") Rosa
+        option(class="option", value="white") Branco
+        option(class="option", value="yellow") Amarelo
+        option(class="option", value="brown") Marrom
+
+
+      h3(class="title") Suavidade
+      div(class="smoothness")
+        div(class="option")
+          input(type="radio", id="muito", value="0.005", name="smoothness", checked="checked")
+          label(for="muito") Muito
+        div(class="option")
+            input(type="radio", id="medio", value="0.02", name="smoothness")
+            label(for="medio") Médio
+        div(class="option")
+            input(type="radio", id="pouco", value="0.05", name="smoothness")
+            label(for="pouco") Pouco
+
+
+      h3(class="title") Defina a curva
+      p(class="info") X máx: 1240 .:. Y máx: 720
+
+      label(class="label" for="v0") Ponto inicial (X, Y)
+      input(class="input", id="v0", type='text', placeholder='0, 0')
+
+      label(class="label" for="v1") Ponto controle 1 (X, Y)
+      input(class="input", id="v1", type='text', placeholder='550, 60')
+
+      label(class="label" for="v2") Ponto controle 2 (X, Y)
+      input(class="input", id="v2", type='text', placeholder='-300, 120')
+
+      label(class="label" for="v3") Ponto final (X, Y)
+      input(class="input", id="v3", type='text', placeholder='700, 560')
+
+      button(class="button", id="desenharCurva") Desenhar Curva
+      button(class="button", id="animarFigura") Animar

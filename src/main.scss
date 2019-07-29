@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+// OpenSans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+.body {
+  background: #f9f9f9;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  color: dodgerblue;
+  font-size: 2vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 2vw 0 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.info {
+  color: grey;
+  font-style: italic;
+  font-size: 12px;
+  margin: 0 0 1vw;
+}
+
+.canvas {
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 10px;
+  max-height: 720px;
+  max-width: 1024px;
+  vertical-align: top;
+  width: 75vw;
+}
+
+.smoothness,
+.figure-type {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.inputs {
+  display: inline-block;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px auto;
+  vertical-align: top;
+  padding: 0 5px;
+  width: calc(25vw - 40px);
+}
+
+.select {
+  width: 50%;
+}
+
+.option {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input {
+  color: dodgerblue;
+  width: 100%;
+}
+
+.label {
+  margin-top: 20px;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+}
+
+.button {
+  border-radius: 4px;
+  color: dodgerblue;
+  font-size: 1vw;
+  margin-top: 3vw;
+  padding: 10px 0;
+  width: 100%;
+}
